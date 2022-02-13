@@ -1,0 +1,81 @@
+body {
+  margin: 5px !important;
+}
+.website_titre {
+  font-size: 2em;
+  font-family: Arial, Helvetica, sans-serif;
+  background: beige;
+  margin: 0;
+  padding: 20px 5px;
+}
+header ul {
+  background: grey;
+  border-radius: 5px;
+}
+header ul li {
+  display: inline-block;
+  margin: 15px;
+}
+header ul li a:hover {
+  color: aqua;
+  background: black;
+}
+header ul li a {
+  color: white;
+}
+.articles {
+  display: flex;
+}
+article {
+  text-align: center;
+}
+article h2 {
+  margin-bottom: 20px;
+}
+article button,
+.connexion button {
+  padding: 5px;
+  color: white;
+  border-radius: 20px;
+  background: cornflowerblue;
+  display: block;
+  width: 80%;
+  margin: 5px;
+  border: none;
+}
+.connexion button {
+  border-radius: 2px;
+  width: 100%;
+  margin: 5px 0;
+}
+article:hover {
+  border-radius: 5px;
+  border: solid 1px rgb(110, 117, 180);
+  cursor: pointer;
+}
+.connexion {
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px grey;
+}
+.connexion span {
+  display: block;
+}
+.connexion .liens {
+  text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+  header ul {
+    padding: 5px 0;
+  }
+  header ul li{
+      display: block;
+  }
+  article button, article p{
+    display: none;
+  }
+  .articles{
+    display: block;
+  }
+}
